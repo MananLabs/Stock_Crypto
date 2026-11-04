@@ -1,0 +1,27 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "forge test -vvv",
+    "check": "node tools/solc-check.mjs contracts test script",
+    "abis": "node tools/solc-check.mjs --abi contracts",
+    "typecheck": "tsc -p .",
+    "deploy": "./script/deploy.sh",
+    "e2e": "node examples/e2e-demo.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "5.6.1",
+    "viem": "2.57.16"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "solc": "0.8.28",
+    "typescript": "5.9.3"
+  },
+  "type": "module"
+}
